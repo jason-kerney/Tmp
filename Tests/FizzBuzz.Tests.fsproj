@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FizzBuzz convert Should.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\FizzBuzz.Lib.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Archer.Arrow.Lib">
+      <HintPath>..\External\Archer.Arrow.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Archer.Bow.Lib">
+      <HintPath>..\External\Archer.Bow.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Archer.CoreTypes.Lib">
+      <HintPath>..\External\Archer.CoreTypes.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Archer.Fletching.Lib">
+      <HintPath>..\External\Archer.Fletching.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Archer.Logger.Lib">
+      <HintPath>..\External\Archer.Logger.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Archer.Quiver.TestAdapter">
+      <HintPath>..\External\Archer.Quiver.TestAdapter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+  </ItemGroup>
+
+</Project>
